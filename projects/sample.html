@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="../lightgallery/css/lightgallery.css">
+    <link rel="stylesheet" href="../lightgallery/css/lg-zoom.css">
+    <link rel="stylesheet" href="../lightgallery/css/lg-thumbnail.css">
+    <title>Sample project - AKVA-ING</title>
+</head>
+<body>
+    
+        <img class="thumb" src="../res/house-beach.png" alt="">
+        <h2>Проект</h2>
+    
+    <ul>
+        <li>много убава</li>
+        <li>100000м2</li>
+        <li>диспензер за мраз</li>
+        <li>дрво у кукјата</li>
+    </ul>
+    <div class="images">
+        <h3>Слики</h3>
+        <div class="image-container" id="lightgallery">
+            <a href="../res/house-beach.png"><img src="../res/house-beach.png" alt=""></a>
+            <a href="../res/house-beach.png"><img src="../res/house-beach.png" alt=""></a>
+            <a href="../res/house-beach.png"><img src="../res/house-beach.png" alt=""></a>
+            <a href="../res/house-beach.png"><img src="../res/house-beach.png" alt=""></a>
+            <a href="../res/house-beach.png"><img src="../res/house-beach.png" alt=""></a>
+            
+            
+
+        </div>
+    </div>
+    <a href="../index.html" class="exit"><img src="../res/exit.svg" alt=""></a>
+
+    <script src="../lightgallery/lightgallery.min.js"></script>
+    <script src="../lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="../lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script type="text/javascript">
+        lightGallery(document.getElementById("lightgallery"),{
+            plugins: [lgZoom, lgThumbnail]
+            // zoom:true,
+            // showZoomInOutIcons:true
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+    <title>AKVA-ING</title>
+</head>
+<body>
+    <main>
+
+        <div class="left-col">
+            <div class="logos">
+                <img src="res/logo.png" alt="">
+                <img src="res/arch-logo.png" alt="">
+            </div>
+            <div class="text">
+                <p>Студио за архитектура, хидротехника и дизајн</p>
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/akva.ing" target="_blank"><img src="res/facebook.svg" alt=""></a>
+                <a href="https://www.instagram.com/akva_ing_architecture/" target="_blank"><img src="res/instagram.svg" alt=""></a>
+                <a href="mailto:akvastip@yahoo.com"><button class="email"><span class="primary">испрати e-mail</span><span class="secondary">akvaing1995@gmail.com</span><img src="res/mail_black_24dp (1).svg" alt=""></button></a>
+            </div>
+        </div>
+        <div class="right-col">
+            <div class="projects-header">
+                <h3>Проекти</h3>
+                <div class="content-pill">
+                    <button class="active" id="arch-btn">архитектура</button>
+                    <button id="hydro-btn">хидротехника</button>
+                </div>
+            </div>
+            <div class="card-container" id="arch">
+                <div class="card">
+                    <img src="res/house-beach.png" alt="">
+                    <p>Објект наслов</p>
+                   <a href="projects/sample.html"> <button class="visit">повеќе</button></a>
+                </div>
+                <div class="card">
+                    <img src="res/house-beach.png" alt="">
+                    <p>Објект наслов</p>
+                   <a href="projects/sample.html"> <button class="visit">повеќе</button></a>
+                </div>
+                <div class="card">
+                    <img src="res/house-beach.png" alt="">
+                    <p>Објект наслов</p>
+                   <a href="projects/sample.html"> <button class="visit">повеќе</button></a>
+                </div>
+                <div class="card">
+                    <img src="res/house-beach.png" alt="">
+                    <p>Објект наслов</p>
+                   <a href="projects/sample.html"> <button class="visit">повеќе</button></a>
+                </div>
+                <div class="card">
+                    <img src="res/house-beach.png" alt="">
+                    <p>Објект наслов</p>
+                   <a href="projects/sample.html"> <button class="visit">повеќе</button></a>
+                </div>
+                <div class="card">
+                    <img src="res/house-beach.png" alt="">
+                    <p>Објект наслов</p>
+                   <a href="projects/sample.html"> <button class="visit">повеќе</button></a>
+                </div>
+                
+                
+                
+            </div>
+            <div class="card-container" id="hydro">
+                <div class="card">
+                    <img src="res/house-beach.png" alt="">
+                    <p>Објект bla</p>
+                    <a href="projects/sample.html"> <button class="visit">повеќе</button></a>
+                </div>
+                <div class="card">
+                    <img src="res/house-beach.png" alt="">
+                    <p>Објект bla</p>
+                    <a href="projects/sample.html"> <button class="visit">повеќе</button></a>
+                </div>
+                <div class="card">
+                    <img src="res/house-beach.png" alt="">
+                    <p>Објект bla</p>
+                    <a href="projects/sample.html"> <button class="visit">повеќе</button></a>
+                </div>
+                <div class="card">
+                    <img src="res/house-beach.png" alt="">
+                    <p>Објект bla</p>
+                    <a href="projects/sample.html"> <button class="visit">повеќе</button></a>
+                </div>
+                <div class="card">
+                    <img src="res/house-beach.png" alt="">
+                    <p>Објект bla</p>
+                    <a href="projects/sample.html"> <button class="visit">повеќе</button></a>
+                </div>
+                <div class="card">
+                    <img src="res/house-beach.png" alt="">
+                    <p>Објект bla</p>
+                    <a href="projects/sample.html"> <button class="visit">повеќе</button></a>
+                </div>
+                <div class="card">
+                    <img src="res/house-beach.png" alt="">
+                    <p>Објект bla</p>
+                    <a href="projects/sample.html"> <button class="visit">повеќе</button></a>
+                </div>
+                <div class="card">
+                    <img src="res/house-beach.png" alt="">
+                    <p>Објект bla</p>
+                    <a href="projects/sample.html"> <button class="visit">повеќе</button></a>
+                </div>
+                
+               
+                
+        </div>
+    </main>
+    <script>
+        var arch=document.getElementById("arch");
+        var hydro=document.getElementById("hydro");
+        var archBtn=document.getElementById("arch-btn");
+        var hydroBtn=document.getElementById("hydro-btn");
+
+        hydro.style.display="none";
+        
+        archBtn.addEventListener("click",function(event){
+            arch.style.display="flex";
+            hydro.style.display="none";
+            hydroBtn.classList.remove("active");
+            archBtn.classList.add("active");
+        })
+        hydroBtn.addEventListener("click",function(event){
+            arch.style.display="none";
+            hydro.style.display="flex";
+            hydroBtn.classList.add("active");
+            archBtn.classList.remove("active");
+        })
+    </script>
+</body>
+</html>

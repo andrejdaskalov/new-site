@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #42424260;
+    border-radius: 90px;
+    margin: 5px;
+    &:hover{
+        width: 15px;
+    }
+    
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #424242;
+    border-radius: 90px;
+    &:hover{
+        background: #3a3a3a;
+    }
+  }
+body{
+    background: #ECECEC;
+    background: url(../res/architectDeepBlue.svg) repeat;
+    
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .left-col{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: fit-content;
+        margin: 2rem auto 0 auto;
+        box-sizing: border-box;
+        //padding-bottom: 15em;
+        // p{
+        //     color: #424242;
+        //     text-align: center;
+        //     margin:0 0 1em 0;
+        //     font-size: small;
+        //     font-weight: 600;
+        // }
+        .logos{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: fit-content;
+            margin: 0 auto 8rem auto;
+            img{
+                height: 100px;
+                margin: 0 5px;
+            }
+        }
+        .text{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items:flex-start;
+            margin-bottom: 3em;
+            img{
+                width: 40px;
+                margin-right: 0.5em;
+            }
+            p{
+                color: #424242;
+                font-size: xx-large;
+                font-weight: 500;
+                letter-spacing: 0.1em;
+                text-align: left;
+                //margin: 0 auto;
+                display: block;
+                position: relative;
+                width:20rem
+            }
+        }
+        .socials{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            a{
+                img{
+                    width: 25px;
+                    margin: 0 1em 0 0;
+                }
+            }
+            a{
+                text-decoration: none;
+                .email{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: fit-content;
+                    border: #424242 solid 2px;
+                    border-radius: 22px;
+                    padding: 0.2em 0.5em;
+                    color: #575757;
+                    cursor: pointer;
+                    position: relative;
+                    .primary{
+                        transition: all ease-in-out 0.5s;
+                        position: absolute;
+                        opacity: 1;
+                    }
+                    .secondary{
+                        // display: none;
+                        transition: all ease-in-out 0.3s;
+                        opacity: 0;
+                    }
+                    img{
+                        margin-left: 2em;
+                        margin-right: 0;
+                    }
+                    
+                    &:hover{
+                        .primary{
+                            // display: none;
+                            opacity: 0;
+                        }
+                        .secondary{
+                            // display: inline;
+                            opacity: 1;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    .right-col{
+        margin: 5rem auto 0 auto;
+        .projects-header{
+            h3{
+                color: #424242;
+                font-size: 2rem;
+                font-weight: 500;
+                letter-spacing: 0.1em;
+            }
+            .content-pill{
+                background: #ffffff ;
+                border: #fff 1px solid;
+                border-radius: 2em;
+                padding: 0.5em;
+                //
+                position: fixed;
+                bottom: 1rem;
+                left: 50%;
+                margin-left: -124px;
+                button{
+                    color: #424242;
+                    border: #fff 1px solid;
+                    background: none;
+                    border-radius: 22px;
+                    margin: 0 0.5rem 0 0.5rem;
+                    font-weight: 600;
+                    padding: 0.2rem 0.5rem;
+                    transition: all ease-in-out 0.5s;
+                    cursor: pointer;
+                    &:hover{
+                        background: #e4e4e4;
+                    }
+                }
+                button.active{
+                    border: #424242 1px solid;
+                }
+            }
+        }
+        .card-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .card{
+                margin: 1rem 0;
+                background: #DDDDDD;
+                box-shadow: 10px 11px 30px rgba(0, 0, 0, 0.25);
+                border-radius: 22px;
+                box-sizing: border-box;
+                padding: 1rem;
+                transition: all ease-in-out 0.3s;
+                &:hover{
+                    transform: scale(115%);
+                    border-radius: 7px;
+                    img{
+                        transform: scale(70%) translateY(-100px);
+                    }
+                    p{
+                        transform: translateY(-100px);
+                    }
+                    a{
+                        text-decoration: none;
+                        .visit{
+                            opacity: 1;
+                            box-shadow: 10px 5px 30px #4763a0ad;
+                        }
+                    }
+                }
+                img{
+                    transition: all ease-in-out 0.3s;
+                }
+                p{
+                    color: #424242;
+                    font-weight: 600;
+                    text-align: center;
+                    transition: all ease-in-out 0.3s;
+                }
+                .visit{
+                    position: relative;
+                    display: block;
+                    opacity: 0;
+                    box-sizing: border-box;
+                    padding: 0.5rem 0.7rem;
+                    margin: 0 auto;
+                    width: fit-content;
+                    border-radius: 22px;
+                    border: #4763a0 1px solid;
+                    background: #4763a0;
+                    color: #e4e4e4;
+                    font-weight: 600;
+                    margin-bottom: -2rem;
+                    cursor: pointer;
+                    
+                    transition: all ease-in-out 0.3s;
+                }
+            }
+        }
+    }
+   
+}
+@media only screen and (min-width: 1080px){
+    body{
+        height: 100vh;
+    }
+    main{
+        flex-direction: row;
+        .left-col{
+            width: 40%;
+            padding-left: 8%;
+            margin: 8% 0 0 0;
+            .logos{
+                margin: 0 0 8rem 0;
+            }
+        }
+        .right-col{
+            width: 60%;
+            box-sizing: border-box;
+            padding: 20rem 5% 0 0;
+            margin: 0;
+            overflow: auto;
+            .projects-header{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .content-pill{
+                position: relative;
+                left: auto;
+                bottom: auto;
+                margin-left: 0;
+                }
+            }
+            .card-container{
+                margin: 2rem 0 0 0;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .card{
+                    width: fit-content;
+                    margin-right: 1em;
+                    img{
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
