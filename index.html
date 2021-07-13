@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,15 @@
     <title>AKVA-ING</title>
 </head>
 <body>
+    <script>
+        if (localStorage.getItem('lang')==='en') {
+            window.location.href="en/index-en.html";
+        }
+    </script>
+    <div class="lang-pill">
+        <button class="active" id="mk-btn">МК</button>
+        <button id="en-btn">EN</button>
+    </div>
     <main>
 
         <div class="left-col">
@@ -119,6 +128,19 @@
         var hydro=document.getElementById("hydro");
         var archBtn=document.getElementById("arch-btn");
         var hydroBtn=document.getElementById("hydro-btn");
+        var mkBtn=document.getElementById("mk-btn");
+        var enBtn=document.getElementById("en-btn");
+
+        mkBtn.addEventListener('click',function(){
+            localStorage.setItem('lang','mk');
+            window.location.href="../index.html";
+
+        })
+        enBtn.addEventListener('click',function(){
+            localStorage.setItem('lang','en');
+            window.location.href="en/index-en.html";
+
+        })
 
         hydro.style.display="none";
         

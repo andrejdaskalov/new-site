@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/projects.css">
+    <link rel="stylesheet" href="../../lightgallery/css/lightgallery.css">
+    <link rel="stylesheet" href="../../lightgallery/css/lg-zoom.css">
+    <link rel="stylesheet" href="../../lightgallery/css/lg-thumbnail.css">
+    <title>Sample project - AKVA-ING</title>
+</head>
+<body>
+    
+        <img class="thumb" src="../../res/house-beach.png" alt="">
+        <h2>Projects</h2>
+    
+    <ul>
+        <li>Preetty</li>
+        <li>100000м2</li>
+        <li>ice dispenser for rich ppl</li>
+        <li>a tree or smth</li>
+    </ul>
+    <div class="images">
+        <h3>Images</h3>
+        <div class="image-container" id="lightgallery">
+            <a href="../../res/macos-big-sur-apple-layers-fluidic-colorful-dark-wwdc-2020-5120x2880-1432.jpg"><img src="../../res/macos-big-sur-apple-layers-fluidic-colorful-dark-wwdc-2020-5120x2880-1432.jpg" alt=""></a>
+            <a href="../../res/house-beach.png"><img src="../../res/house-beach.png" alt=""></a>
+            <a href="../../res/house-beach.png"><img src="../../res/house-beach.png" alt=""></a>
+            <a href="../../res/house-beach.png"><img src="../../res/house-beach.png" alt=""></a>
+            <a href="../../res/house-beach.png"><img src="../../res/house-beach.png" alt=""></a>
+            
+            
+
+        </div>
+    </div>
+    <a href="../index-en.html" class="exit"><img src="../../res/exit.svg" alt=""></a>
+
+    <script src="../../lightgallery/lightgallery.min.js"></script>
+    <script src="../../lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="../../lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script type="text/javascript">
+        lightGallery(document.getElementById("lightgallery"),{
+            plugins: [lgZoom, lgThumbnail],
+            showZoomInOutIcons:true,
+            actualSize:false
+        });
+    </script>
+</body>
+</html>

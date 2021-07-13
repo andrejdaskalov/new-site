@@ -33,6 +33,37 @@ body {
   background: url(../res/architectDeepBlue.svg) repeat;
 }
 
+.lang-pill {
+  background: #ffffff;
+  border: #fff 1px solid;
+  border-radius: 2em;
+  padding: 0.5em;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+.lang-pill button {
+  color: #424242;
+  border: #fff 1px solid;
+  background: none;
+  border-radius: 22px;
+  margin: 0 0.2rem 0 0.2rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+.lang-pill button:hover {
+  background: #e4e4e4;
+}
+
+.lang-pill button.active {
+  border: #424242 1px solid;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -254,6 +285,7 @@ main .right-col .card-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 5rem;
 }
 
 main .right-col .card-container .card {

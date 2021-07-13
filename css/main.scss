@@ -31,6 +31,33 @@ body{
     
     
 }
+.lang-pill{
+    background: #ffffff ;
+    border: #fff 1px solid;
+    border-radius: 2em;
+    padding: 0.5em;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    button{
+        color: #424242;
+        border: #fff 1px solid;
+        background: none;
+        border-radius: 22px;
+        margin: 0 0.2rem 0 0.2rem;
+        font-weight: 600;
+        padding: 0.2rem 0.5rem;
+        transition: all ease-in-out 0.5s;
+        cursor: pointer;
+        &:hover{
+            background: #e4e4e4;
+        }
+    }
+    button.active{
+        border: #424242 1px solid;
+    }
+    
+}
 main{
     display: flex;
     flex-direction: column;
@@ -184,6 +211,7 @@ main{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            padding-bottom: 5rem;
             .card{
                 margin: 1rem 0;
                 background: #DDDDDD;

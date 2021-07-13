@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" href="../res/favicon.ico" type="image/x-icon">
+    <title>AKVA-ING</title>
+</head>
+<body>
+    <div class="lang-pill">
+        <button id="mk-btn">МК</button>
+        <button class="active" id="en-btn">EN</button>
+    </div>
+    <main>
+
+        <div class="left-col">
+            <div class="logos">
+                <img src="../res/logo.png" alt="">
+                <img src="../res/arch-logo.png" alt="">
+            </div>
+            <div class="text">
+                <p>Architecture, waterworks and design studio</p>
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/akva.ing" target="_blank"><img src="../res/facebook.svg" alt=""></a>
+                <a href="https://www.instagram.com/akva_ing_architecture/" target="_blank"><img src="../res/instagram.svg" alt=""></a>
+                <a href="mailto:akvastip@yahoo.com"><button class="email"><span class="primary">send e-mail</span><span class="secondary">akvaing1995@gmail.com</span><img src="../res/mail_black_24dp (1).svg" alt=""></button></a>
+            </div>
+        </div>
+        <div class="right-col">
+            <div class="projects-header">
+                <h3>Проекти</h3>
+                <div class="content-pill">
+                    <button class="active" id="arch-btn">architecture</button>
+                    <button id="hydro-btn">waterworks</button>
+                </div>
+            </div>
+            <div class="card-container" id="arch">
+                <div class="card">
+                    <img src="../res/house-beach.png" alt="">
+                    <p>Title here</p>
+                   <a href="projects/sample.html"> <button class="visit">show more</button></a>
+                </div>
+                <div class="card">
+                    <img src="../res/house-beach.png" alt="">
+                    <p>Title here</p>
+                   <a href="projects/sample.html"> <button class="visit">show more</button></a>
+                </div>
+                <div class="card">
+                    <img src="../res/house-beach.png" alt="">
+                    <p>Title here</p>
+                   <a href="projects/sample.html"> <button class="visit">show more</button></a>
+                </div>
+                <div class="card">
+                    <img src="../res/house-beach.png" alt="">
+                    <p>Title here</p>
+                   <a href="projects/sample.html"> <button class="visit">show more</button></a>
+                </div>
+                <div class="card">
+                    <img src="../res/house-beach.png" alt="">
+                    <p>Title here</p>
+                   <a href="projects/sample.html"> <button class="visit">show more</button></a>
+                </div>
+                <div class="card">
+                    <img src="../res/house-beach.png" alt="">
+                    <p>Title here</p>
+                   <a href="projects/sample.html"> <button class="visit">show more</button></a>
+                </div>
+                
+                
+                
+            </div>
+            <div class="card-container" id="hydro">
+                <div class="card">
+                    <img src="../res/house-beach.png" alt="">
+                    <p>hydro title</p>
+                    <a href="projects/sample.html"> <button class="visit">show more</button></a>
+                </div>
+                <div class="card">
+                    <img src="../res/house-beach.png" alt="">
+                    <p>hydro title</p>
+                    <a href="projects/sample.html"> <button class="visit">show more</button></a>
+                </div>
+                <div class="card">
+                    <img src="../res/house-beach.png" alt="">
+                    <p>hydro title</p>
+                    <a href="projects/sample.html"> <button class="visit">show more</button></a>
+                </div>
+                <div class="card">
+                    <img src="../res/house-beach.png" alt="">
+                    <p>hydro title</p>
+                    <a href="projects/sample.html"> <button class="visit">show more</button></a>
+                </div>
+                <div class="card">
+                    <img src="../res/house-beach.png" alt="">
+                    <p>hydro title</p>
+                    <a href="projects/sample.html"> <button class="visit">show more</button></a>
+                </div>
+                <div class="card">
+                    <img src="../res/house-beach.png" alt="">
+                    <p>hydro title</p>
+                    <a href="projects/sample.html"> <button class="visit">show more</button></a>
+                </div>
+                <div class="card">
+                    <img src="../res/house-beach.png" alt="">
+                    <p>hydro title</p>
+                    <a href="projects/sample.html"> <button class="visit">show more</button></a>
+                </div>
+                <div class="card">
+                    <img src="../res/house-beach.png" alt="">
+                    <p>hydro title</p>
+                    <a href="projects/sample.html"> <button class="visit">show more</button></a>
+                </div>
+                
+               
+                
+        </div>
+    </main>
+    <script>
+        var arch=document.getElementById("arch");
+        var hydro=document.getElementById("hydro");
+        var archBtn=document.getElementById("arch-btn");
+        var hydroBtn=document.getElementById("hydro-btn");
+        var mkBtn=document.getElementById("mk-btn");
+        var enBtn=document.getElementById("en-btn");
+
+        mkBtn.addEventListener('click',function(){
+            localStorage.setItem('lang','mk');
+            window.location.href="../index.html";
+
+        })
+        enBtn.addEventListener('click',function(){
+            localStorage.setItem('lang','en');
+            window.location.href="en/index-en.html";
+
+        })
+
+        hydro.style.display="none";
+        
+        archBtn.addEventListener("click",function(event){
+            arch.style.display="flex";
+            hydro.style.display="none";
+            hydroBtn.classList.remove("active");
+            archBtn.classList.add("active");
+        })
+        hydroBtn.addEventListener("click",function(event){
+            arch.style.display="none";
+            hydro.style.display="flex";
+            hydroBtn.classList.add("active");
+            archBtn.classList.remove("active");
+        })
+    </script>
+</body>
+</html>
