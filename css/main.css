@@ -34,13 +34,13 @@ body {
 }
 
 .lang-pill {
-  background: #ffffff;
-  border: #fff 1px solid;
+  background: none;
+  border: rgba(255, 255, 255, 0) 1px solid;
   border-radius: 2em;
   padding: 0.5em;
   position: absolute;
   top: 1rem;
-  right: 2rem;
+  left: 1rem;
 }
 
 .lang-pill button {
@@ -108,7 +108,7 @@ main .left-col .logos {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto 8rem auto;
+  margin: 0 auto 20% auto;
 }
 
 main .left-col .logos img {
@@ -223,6 +223,15 @@ main .left-col .socials a .email:hover .primary {
 
 main .left-col .socials a .email:hover .secondary {
   opacity: 1;
+}
+
+main .left-col .about {
+  margin: 1.5rem 0 0 0;
+}
+
+main .left-col .about a {
+  color: #424242;
+  text-decoration: none;
 }
 
 main .right-col {
@@ -344,6 +353,12 @@ main .right-col .card-container .card p {
 @media only screen and (min-width: 1080px) {
   body {
     height: 100vh;
+    overflow: hidden;
+  }
+  .lang-pill {
+    background: #FFFFFF;
+    left: auto;
+    right: 2rem;
   }
   main {
     -webkit-box-orient: horizontal;
@@ -354,7 +369,7 @@ main .right-col .card-container .card p {
   main .left-col {
     width: 40%;
     padding-left: 8%;
-    margin: 8% 0 0 0;
+    margin: 7% 0 0 0;
   }
   main .left-col .logos {
     margin: 0 0 20% 0;
