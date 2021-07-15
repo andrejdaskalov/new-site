@@ -6,9 +6,6 @@
     margin: 0;
     font-family: 'Jost', sans-serif;
 }
-*:focus{
-    outline: #4763a0 2px dashed;
-}
 ::-webkit-scrollbar {
     width: 8px;
   }
@@ -138,6 +135,9 @@ body{
     }
 }
 @media only screen and (min-width: 1080px){
+    *:focus{
+        outline: #4763a0 2px dashed;
+    }
     body{
 
         grid-template-columns: 1fr 5fr 4fr 10fr 1fr;

@@ -5,10 +5,6 @@
   font-family: 'Jost', sans-serif;
 }
 
-*:focus {
-  outline: #4763a0 2px dashed;
-}
-
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -355,6 +351,9 @@ main .right-col .card-container .card p {
 }
 
 @media only screen and (min-width: 1080px) {
+  *:focus {
+    outline: #4763a0 2px dashed;
+  }
   body {
     height: 100vh;
     overflow: hidden;
