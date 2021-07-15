@@ -6,6 +6,9 @@
     margin: 0;
     font-family: 'Jost', sans-serif;
 }
+*:focus{
+    outline: #4763a0 2px dashed;
+}
 ::-webkit-scrollbar {
     width: 8px;
   }
