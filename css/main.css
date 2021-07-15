@@ -427,7 +427,7 @@ main .right-col .card-container .card p {
     -webkit-transform: scale(115%);
             transform: scale(115%);
     border-radius: 7px;
-    z-index: 999;
+    z-index: 900;
   }
   main .right-col .card-container .card:hover img {
     -webkit-transform: scale(70%) translateY(-100px);
