@@ -181,4 +181,11 @@ body .exit img {
     margin: auto;
   }
 }
+
+@media only screen and (min-width: 1920px) {
+  body {
+    width: 1920px;
+    margin: 0 auto;
+  }
+}
 /*# sourceMappingURL=about.css.map */

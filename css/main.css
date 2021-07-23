@@ -350,42 +350,14 @@ main .right-col .card-container .card p {
   margin: 0 0 1rem 0;
 }
 
-@media only screen and (min-width: 1080px) {
-  *:focus {
-    outline: #4763a0 2px dashed;
+@media only screen and (min-width: 768px) {
+  body main .left-col {
+    width: 80%;
   }
-  body {
-    height: 100vh;
-    overflow: hidden;
+  body main .right-col {
+    width: 80%;
   }
-  .lang-pill {
-    background: #FFFFFF;
-    left: auto;
-    right: 2rem;
-  }
-  main {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  main .left-col {
-    width: 40%;
-    padding-left: 8%;
-    margin: 7% 0 0 0;
-  }
-  main .left-col .logos {
-    margin: 0 0 20% 0;
-  }
-  main .right-col {
-    width: 60%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 20rem 5% 0 0;
-    margin: 0;
-    overflow: auto;
-  }
-  main .right-col .projects-header {
+  body main .right-col .projects-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -397,7 +369,7 @@ main .right-col .card-container .card p {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  main .right-col .projects-header .content-pill {
+  body main .right-col .projects-header .content-pill {
     position: relative;
     left: auto;
     bottom: auto;
@@ -405,7 +377,50 @@ main .right-col .card-container .card p {
     -webkit-transform: none;
             transform: none;
   }
-  main .right-col .card-container {
+  body main .right-col .card-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  *:focus {
+    outline: #4763a0 2px dashed;
+  }
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  body main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body main .left-col {
+    width: 40%;
+    padding-left: 8%;
+    margin: 7% 0 0 0;
+  }
+  body main .left-col .logos {
+    margin: 0 0 20% 0;
+  }
+  body main .right-col {
+    width: 60%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20rem 5% 0 0;
+    margin: 0;
+    overflow: auto;
+  }
+  body main .right-col .card-container {
     margin: 2rem 0 0 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -416,32 +431,32 @@ main .right-col .card-container .card p {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  main .right-col .card-container .card {
+  body main .right-col .card-container .card {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     margin-right: 1em;
   }
-  main .right-col .card-container .card:hover {
+  body main .right-col .card-container .card:hover {
     -webkit-transform: scale(115%);
             transform: scale(115%);
     border-radius: 7px;
     z-index: 900;
   }
-  main .right-col .card-container .card:hover img {
+  body main .right-col .card-container .card:hover img {
     -webkit-transform: scale(70%) translateY(-100px);
             transform: scale(70%) translateY(-100px);
   }
-  main .right-col .card-container .card:hover p {
+  body main .right-col .card-container .card:hover p {
     -webkit-transform: translateY(-100px);
             transform: translateY(-100px);
   }
-  main .right-col .card-container .card:hover a .visit {
+  body main .right-col .card-container .card:hover a .visit {
     opacity: 1;
     -webkit-box-shadow: 10px 5px 30px #4763a0ad;
             box-shadow: 10px 5px 30px #4763a0ad;
   }
-  main .right-col .card-container .card a {
+  body main .right-col .card-container .card a {
     position: relative;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -451,7 +466,7 @@ main .right-col .card-container .card p {
     top: auto;
     margin: 0 auto;
   }
-  main .right-col .card-container .card a .visit {
+  body main .right-col .card-container .card a .visit {
     position: relative;
     bottom: auto;
     left: auto;
@@ -471,11 +486,23 @@ main .right-col .card-container .card p {
     -webkit-transition: all ease-in-out 0.3s;
     transition: all ease-in-out 0.3s;
   }
-  main .right-col .card-container .card p {
+  body main .right-col .card-container .card p {
     margin: auto;
   }
-  main .right-col .card-container .card img {
+  body main .right-col .card-container .card img {
     width: 250px;
+  }
+  .lang-pill {
+    background: #FFFFFF;
+    left: auto;
+    right: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  body {
+    width: 1920px;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
