@@ -112,7 +112,7 @@ main .left-col .logos {
 }
 
 main .left-col .logos img {
-  height: 100px;
+  height: 90px;
   margin: 0 5px;
 }
 
@@ -339,6 +339,8 @@ main .right-col .card-container .card a .visit {
 main .right-col .card-container .card img {
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
+  border-radius: 22px 22px 22px 22px;
+  width: 200px;
 }
 
 main .right-col .card-container .card p {
@@ -347,7 +349,7 @@ main .right-col .card-container .card p {
   text-align: center;
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
-  margin: 0 0 1rem 0;
+  margin: 2rem 0 1rem 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -391,9 +393,6 @@ main .right-col .card-container .card p {
 }
 
 @media only screen and (min-width: 1080px) {
-  *:focus {
-    outline: #4763a0 2px dashed;
-  }
   body {
     height: 100vh;
     overflow: hidden;
@@ -410,7 +409,7 @@ main .right-col .card-container .card p {
     margin: 7% 0 0 0;
   }
   body main .left-col .logos {
-    margin: 0 0 20% 0;
+    margin: 0 0 10% 0;
   }
   body main .right-col {
     width: 60%;
@@ -438,14 +437,14 @@ main .right-col .card-container .card p {
     margin-right: 1em;
   }
   body main .right-col .card-container .card:hover {
-    -webkit-transform: scale(115%);
-            transform: scale(115%);
+    -webkit-transform: scale(110%);
+            transform: scale(110%);
     border-radius: 7px;
     z-index: 900;
   }
   body main .right-col .card-container .card:hover img {
-    -webkit-transform: scale(70%) translateY(-100px);
-            transform: scale(70%) translateY(-100px);
+    -webkit-transform: scale(80%) translateY(-80px);
+            transform: scale(80%) translateY(-80px);
   }
   body main .right-col .card-container .card:hover p {
     -webkit-transform: translateY(-100px);
@@ -487,7 +486,7 @@ main .right-col .card-container .card p {
     transition: all ease-in-out 0.3s;
   }
   body main .right-col .card-container .card p {
-    margin: auto;
+    margin: 2rem auto auto auto;
   }
   body main .right-col .card-container .card img {
     width: 250px;

@@ -45,8 +45,10 @@ body .thumb {
   -ms-grid-column: 1;
   grid-area: thumb;
   max-height: 100%;
+  width: 200px;
   margin: 0 auto;
   display: block;
+  border-radius: 22px 22px 22px 22px;
 }
 
 body h2 {

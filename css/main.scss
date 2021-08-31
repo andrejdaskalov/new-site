@@ -82,7 +82,7 @@ main{
             width: fit-content;
             margin: 0 auto 20% auto;
             img{
-                height: 100px;
+                height: 90px;
                 margin: 0 5px;
             }
         }
@@ -250,13 +250,15 @@ main{
                 }
                 img{
                     transition: all ease-in-out 0.3s;
+                    border-radius: 22px 22px 22px 22px;
+                    width: 200px;
                 }
                 p{
                     color: #424242;
                     font-weight: 600;
                     text-align: center;
                     transition: all ease-in-out 0.3s;
-                    margin: 0 0 1rem 0;
+                    margin: 2rem 0 1rem 0;
                 }
                
             }
@@ -294,9 +296,9 @@ main{
     }
 }
 @media only screen and (min-width: 1080px){
-    *:focus{
-        outline: #4763a0 2px dashed;
-    }
+    // *:focus{
+    //     outline: #4763a0 2px dashed;
+    // }
     body{
         height: 100vh;
         overflow: hidden;
@@ -307,7 +309,7 @@ main{
                 padding-left: 8%;
                 margin: 7% 0 0 0;
                 .logos{
-                    margin: 0 0 20% 0;
+                    margin: 0 0 10% 0;
                 }
             }
             .right-col{
@@ -325,11 +327,11 @@ main{
                         width: fit-content;
                         margin-right: 1em;
                         &:hover{
-                            transform: scale(115%);
+                            transform: scale(110%);
                             border-radius: 7px;
                             z-index: 900;
                             img{
-                                transform: scale(70%) translateY(-100px);
+                                transform: scale(80%) translateY(-80px);
                             }
                             p{
                                 transform: translateY(-100px);
@@ -366,7 +368,7 @@ main{
                             }
                         }
                         p{
-                            margin: auto
+                            margin: 2rem auto auto auto
                         }
                         img{
                             width: 250px;

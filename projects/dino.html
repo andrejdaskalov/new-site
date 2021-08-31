@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../lightgallery/css/lightgallery.css">
+    <link rel="stylesheet" href="../lightgallery/css/lg-zoom.css">
+    <link rel="stylesheet" href="../lightgallery/css/lg-thumbnail.css">
+    <title>Ентериер Дино - AKVA-ING</title>
+</head>
+<body>
+    
+        <img class="thumb" src="../res/dinothumb.jpg" alt="">
+        <h2>Ентериер Дино</h2>
+    
+    <ul>
+        <li>Тип на проект: Ентериерно уредување</li>
+        <li>Година на проектирање: 2019</li>
+        <li>Инвеститор: Приватен</li>
+        <li>Место: Капиштец, Скопје</li>
+    </ul>
+    <div class="images">
+        <h3>Слики</h3>
+        <div class="image-container" id="lightgallery">
+            <a href="dino/01.jpg"><img src="dino/01 (Small).jpg" alt="ентериер преден прикас"></a>
+            <a href="dino/03.jpg"><img src="dino/03 (Small).jpg" alt="ентериер бочен приказ"></a>
+            <a href="dino/04.jpg"><img src="dino/04 (Small).jpg" alt="ентериер горен приказ"></a>
+            
+            
+
+        </div>
+    </div>
+    <a href="../index.html" class="exit"><img src="../res/exit.svg" alt="излез"></a>
+
+    <script src="../lightgallery/lightgallery.min.js"></script>
+    <script src="../lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="../lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script type="text/javascript">
+        lightGallery(document.getElementById("lightgallery"),{
+            plugins: [lgZoom, lgThumbnail],
+            showZoomInOutIcons:true,
+            actualSize:false
+        });
+    </script>
+</body>
+</html>

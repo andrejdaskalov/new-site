@@ -41,20 +41,18 @@ body{
     .thumb{
         grid-area: thumb;
         max-height: 100%;
-        
-            // width: 300px;
-            margin: 0 auto;
-            display: block;
-            
-        
-        }
-        h2{
-            color: #424242;
-            font-weight: 600;
-            text-align: center;
-            margin: 1rem 0 0 0;
-            grid-area: title;
-        }
+        width: 200px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 22px 22px 22px 22px;
+    }
+    h2{
+        color: #424242;
+        font-weight: 600;
+        text-align: center;
+        margin: 1rem 0 0 0;
+        grid-area: title;
+    }
     ul{
         grid-area: info;
         margin-top: 2rem;

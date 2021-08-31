@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../lightgallery/css/lightgallery.css">
+    <link rel="stylesheet" href="../lightgallery/css/lg-zoom.css">
+    <link rel="stylesheet" href="../lightgallery/css/lg-thumbnail.css">
+    <title>Икеа - AKVA-ING</title>
+</head>
+<body>
+    
+        <img class="thumb" src="../res/ikeathumb.png" alt="">
+        <h2>Икеа</h2>
+    
+    <ul>
+        <li>Тип на проект: Идеен проект за трговски центар од отворен тип</li>
+        <li>Година на проектирање: 2020</li>
+        <li>Инвеститор: /</li>
+        <li>Место: /</li>
+    </ul>
+    <div class="images">
+        <h3>Слики</h3>
+        <div class="image-container" id="lightgallery">
+            <a href="ikea/img1.jpg"><img src="ikea/img1thumb.jpg" alt=""></a>
+            <a href="ikea/img2.jpg"><img src="ikea/img2thumb.jpg" alt=""></a>
+            <a href="ikea/img3.png"><img src="ikea/img3thumb.png" alt=""></a>
+            
+            
+
+        </div>
+    </div>
+    <a href="../index.html" class="exit"><img src="../res/exit.svg" alt=""></a>
+
+    <script src="../lightgallery/lightgallery.min.js"></script>
+    <script src="../lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="../lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script type="text/javascript">
+        lightGallery(document.getElementById("lightgallery"),{
+            plugins: [lgZoom, lgThumbnail],
+            showZoomInOutIcons:true,
+            actualSize:false
+        });
+    </script>
+</body>
+</html>
