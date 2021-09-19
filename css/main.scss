@@ -219,14 +219,17 @@ main{
             padding-bottom: 5rem;
             .card{
                 margin: 1rem 0;
-                background: #DDDDDD;
+                background: #dddddd00;
                 box-shadow: 10px 11px 30px rgba(0, 0, 0, 0.25);
                 border-radius: 22px;
                 box-sizing: border-box;
                 padding: 1rem;
                 transition: all ease-in-out 0.3s;
                 position: relative;
-                width: calc(200px + 2rem);
+                width: calc(250px + 2rem);
+
+                backdrop-filter: blur(1.5px);
+                
                 a{
                     text-decoration: none;
                     display: block;
@@ -252,14 +255,14 @@ main{
                 img{
                     transition: all ease-in-out 0.3s;
                     border-radius: 22px 22px 22px 22px;
-                    width: 200px;
+                    width: 250px;
                 }
                 p{
                     color: #424242;
                     font-weight: 600;
                     text-align: center;
                     transition: all ease-in-out 0.3s;
-                    margin: 2rem 0 1rem 0;
+                    margin: 2rem 0 2rem 0;
                     word-wrap: break-word;
                 }
                
@@ -330,52 +333,51 @@ main{
                         margin-right: 1em;
                         width: calc(250px + 2rem);
                         &:hover{
-                            transform: scale(110%);
+                            transform: scale(110.00001%) translateZ(0) perspective(1px);
                             border-radius: 7px;
                             z-index: 900;
-                            img{
-                                transform: scale(80%) translateY(-80px);
-                            }
-                            p{
-                                transform: translateY(-100px);
-                            }
-                            a{
-                                .visit{
-                                    opacity: 1;
-                                    box-shadow: 10px 5px 30px #4763a0ad;
-                                }
-                            }
+                            backface-visibility: hidden;
+                            // img{
+                            //     transform: scale(80%) translateY(-80px);
+                            // }
+                            // p{
+                            //     transform: translateY(-100px);
+                            // }
+                            // a{
+                            //     .visit{
+                            //         opacity: 1;
+                            //         box-shadow: 10px 5px 30px #4763a0ad;
+                            //     }
+                            // }
                         }
-                        a{
-                            position: relative;
-                            width: fit-content;
-                            height: auto;
-                            left: auto;
-                            top: auto;
-                            margin: 0 auto;
-                            .visit{
-                                position: relative;
-                                bottom: auto;
-                                left: auto;
-                                transform: none;
-                                opacity: 0;
-                                padding: 0.5rem 0.7rem;
-                                width: fit-content;
-                                border-radius: 22px;
-                                border: #4763a0 1px solid;
-                                background: #4763a0;
-                                color: #e4e4e4;
-                                margin-bottom: -2rem;
-                                cursor: pointer;
-                                transition: all ease-in-out 0.3s;
-                            }
-                        }
-                        p{
-                            margin: 2rem auto auto auto
-                        }
-                        img{
-                            width: 250px;
-                        }
+                        // a{
+                            // position: relative;
+                            // width: fit-content;
+                            // height: auto;
+                            // left: auto;
+                            // top: auto;
+                            // margin: 0 auto;      
+                            // .visit{
+                            //     position: relative;
+                            //     bottom: auto;
+                            //     left: auto;
+                            //     transform: none;
+                            //     opacity: 0;
+                            //     padding: 0.5rem 0.7rem;
+                            //     width: fit-content;
+                            //     border-radius: 22px;
+                            //     border: #4763a0 1px solid;
+                            //     background: #4763a0;
+                            //     color: #e4e4e4;
+                            //     margin-bottom: -2rem;
+                            //     cursor: pointer;
+                            //     transition: all ease-in-out 0.3s;
+                            // }
+                        // }
+                        // p{
+                        //     margin: 2rem auto auto auto
+                        // }
+                        
                     }
                 }
             }

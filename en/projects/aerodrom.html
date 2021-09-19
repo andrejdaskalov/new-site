@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/projects.css">
+    <link rel="stylesheet" href="../../lightgallery/css/lightgallery.css">
+    <link rel="stylesheet" href="../../lightgallery/css/lg-zoom.css">
+    <link rel="stylesheet" href="../../lightgallery/css/lg-thumbnail.css">
+    <title>Residential interior design - AKVA-ING</title>
+</head>
+<body>
+    
+        <img class="thumb" src="../../res/aerodromthumb.png" alt="">
+        <h2>Residential interior design</h2>
+    
+    <ul>
+        <li>Type of project: Interior design</li>
+        <li>Year designed: 2020</li>
+        <li>Investor: Private</li>
+        <li>Place: Aerodrom, Skopje</li>
+    </ul>
+    <div class="images">
+        <div class="image-container" id="lightgallery">
+            <a href="../../projects/aerodrom/01.png"><img src="../../projects/aerodrom/01 (Small).png" alt="3D visual - living room view"></a>
+            <a href="../../projects/aerodrom/03p.jpg"><img src="../../projects/aerodrom/03p (Small).jpg" alt="3D visual - kitchen view"></a>
+            <a href="../../projects/aerodrom/DETSKA1.jpg"><img src="../../projects/aerodrom/DETSKA1 (Small).jpg" alt="3D visual - kids' room"></a>
+            
+            
+
+        </div>
+    </div>
+    <a href="../index-en.html" class="exit"><img src="../../res/exit.svg" alt="exit button"></a>
+
+    <script src="../../lightgallery/lightgallery.min.js"></script>
+    <script src="../../lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="../../lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script type="text/javascript">
+        lightGallery(document.getElementById("lightgallery"),{
+            plugins: [lgZoom, lgThumbnail],
+            showZoomInOutIcons:true,
+            actualSize:false
+        });
+    </script>
+</body>
+</html>

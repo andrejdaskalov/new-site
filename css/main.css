@@ -299,7 +299,7 @@ main .right-col .card-container {
 
 main .right-col .card-container .card {
   margin: 1rem 0;
-  background: #DDDDDD;
+  background: #dddddd00;
   -webkit-box-shadow: 10px 11px 30px rgba(0, 0, 0, 0.25);
           box-shadow: 10px 11px 30px rgba(0, 0, 0, 0.25);
   border-radius: 22px;
@@ -310,6 +310,8 @@ main .right-col .card-container .card {
   transition: all ease-in-out 0.3s;
   position: relative;
   width: calc(250px + 2rem);
+  -webkit-backdrop-filter: blur(1.5px);
+          backdrop-filter: blur(1.5px);
 }
 
 main .right-col .card-container .card a {
@@ -341,7 +343,7 @@ main .right-col .card-container .card img {
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
   border-radius: 22px 22px 22px 22px;
-  width: 200px;
+  width: 250px;
 }
 
 main .right-col .card-container .card p {
@@ -350,7 +352,7 @@ main .right-col .card-container .card p {
   text-align: center;
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0 2rem 0;
   word-wrap: break-word;
 }
 
@@ -434,61 +436,15 @@ main .right-col .card-container .card p {
   }
   body main .right-col .card-container .card {
     margin-right: 1em;
+    width: calc(250px + 2rem);
   }
   body main .right-col .card-container .card:hover {
-    -webkit-transform: scale(110%);
-            transform: scale(110%);
+    -webkit-transform: scale(110.00001%) translateZ(0) perspective(1px);
+            transform: scale(110.00001%) translateZ(0) perspective(1px);
     border-radius: 7px;
     z-index: 900;
-  }
-  body main .right-col .card-container .card:hover img {
-    -webkit-transform: scale(80%) translateY(-80px);
-            transform: scale(80%) translateY(-80px);
-  }
-  body main .right-col .card-container .card:hover p {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-  body main .right-col .card-container .card:hover a .visit {
-    opacity: 1;
-    -webkit-box-shadow: 10px 5px 30px #4763a0ad;
-            box-shadow: 10px 5px 30px #4763a0ad;
-  }
-  body main .right-col .card-container .card a {
-    position: relative;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: auto;
-    left: auto;
-    top: auto;
-    margin: 0 auto;
-  }
-  body main .right-col .card-container .card a .visit {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    -webkit-transform: none;
-            transform: none;
-    opacity: 0;
-    padding: 0.5rem 0.7rem;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    border-radius: 22px;
-    border: #4763a0 1px solid;
-    background: #4763a0;
-    color: #e4e4e4;
-    margin-bottom: -2rem;
-    cursor: pointer;
-    -webkit-transition: all ease-in-out 0.3s;
-    transition: all ease-in-out 0.3s;
-  }
-  body main .right-col .card-container .card p {
-    margin: 2rem auto auto auto;
-  }
-  body main .right-col .card-container .card img {
-    width: 250px;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
   }
   .lang-pill {
     background: #FFFFFF;
