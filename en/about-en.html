@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,47 @@
     <link rel="stylesheet" href="../css/about.css">
     <title>About/Location - AKVA-ING</title>
 </head>
+
 <body>
-        <div class="thumb">
-            <img src="../res/logo.png" alt="">
-            <img src="../res/arch-logo.png" alt="">
-        </div>
-        
-        <h2>About</h2>
-    
-    <p>+38978300129 <br>
-    +38978393130 <br>
-    Boulevard Kuzman Josifovski Pitu 19/4, Skopje 1000 <br>
-    Pirinska 148a, Stip 2000
+    <div class="thumb">
+        <img src="../res/logo (Small).png" alt="">
+        <img src="../res/arch-logo (Small).png" alt="">
+    </div>
+
+    <h2>About</h2>
+
+    <p>Akva-Ing is a private company, formed 1995 in Stip, Republic of Macedonia. It was started in the area of hydrotechnics, design and engineering water supply systems, irrigation, treatment of
+        waters, pools and fountains. <br>
+        <br>
+        <b>Services we offer:</b> <br>
+        -Architecture <br>
+        -Construction<br>
+        -Hydrotechnics
+        -Environmental reports<br>
+        -Supervision
+        <br> <br>
+        In our list of finished projects we have a variety of clientelle, from individuals and private companies to municipalities and projects of state importance. <br>
+
+        With the increase of experience, as well as the increase of our staff and client demand, we have increased our area of work to the level of the entire country<br>
+
+        We expanded to architecture, designing houses, buildings, as well as major road infrastructure<br>
+
+        Our employeess and partners are tried and tested in their respective fields and ready to take on any challenge the client can give. Our field of work is oriented towards consulting, design and supervision<br>
+        <br>
+
+    </p>
+    <p class="contact">
+        <b>Skopje:</b> <br>
+        +38978300129 <br>
+        Boulevard Kuznam Josifovski Pitu 19/4, Skopje 1000 <br>
+
+        <br>
+
+        <b>Stip:</b> <br>
+        +38978393130 <br>
+        +38978300220 <br>
+        Pirinska 148а, Stip 2000
+
     </p>
     <div class="map">
         <div class="header">
@@ -28,32 +58,37 @@
                 <button id="skopje-btn">Skopje</button>
             </div>
         </div>
-        <iframe id="skopje-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.5562195625935!2d21.449648450586597!3d41.988336966386115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415a61efd3e25%3A0x2bb0e577f8bb865b!2sAkva-Ing%20Architecture!5e0!3m2!1sen!2smk!4v1626188720849!5m2!1sen!2smk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <iframe id="stip-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2976.91567071366!2d22.193445215710693!3d41.743911781779396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1355dd56430e9965%3A0x3048caa83f947321!2sAkva-Ing!5e0!3m2!1sen!2smk!4v1626190928577!5m2!1sen!2smk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        
+        <iframe id="skopje-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.5562195625935!2d21.449648450586597!3d41.988336966386115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415a61efd3e25%3A0x2bb0e577f8bb865b!2sAkva-Ing%20Architecture!5e0!3m2!1sen!2smk!4v1626188720849!5m2!1sen!2smk"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe id="stip-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2976.91567071366!2d22.193445215710693!3d41.743911781779396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1355dd56430e9965%3A0x3048caa83f947321!2sAkva-Ing!5e0!3m2!1sen!2smk!4v1626190928577!5m2!1sen!2smk"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
     </div>
     <a href="index-en.html" class="exit"><img src="../res/exit.svg" alt=""></a>
 
     <script>
-        var stipBtn=document.getElementById('stip-btn');
-        var skopjeBtn=document.getElementById('skopje-btn');
-        var skopjeMap=document.getElementById('skopje-map');
-        var stipMap=document.getElementById('stip-map');
+        var stipBtn = document.getElementById('stip-btn');
+        var skopjeBtn = document.getElementById('skopje-btn');
+        var skopjeMap = document.getElementById('skopje-map');
+        var stipMap = document.getElementById('stip-map');
 
-        skopjeMap.style.display='none';
+        skopjeMap.style.display = 'none';
 
-        stipBtn.addEventListener('click',function(){
-            skopjeMap.style.display='none';
-            stipMap.style.display='block';
+        stipBtn.addEventListener('click', function () {
+            skopjeMap.style.display = 'none';
+            stipMap.style.display = 'block';
             stipBtn.classList.add('active');
             skopjeBtn.classList.remove('active');
         });
-        skopjeBtn.addEventListener('click',function(){
-            skopjeMap.style.display='block';
-            stipMap.style.display='none';
+        skopjeBtn.addEventListener('click', function () {
+            skopjeMap.style.display = 'block';
+            stipMap.style.display = 'none';
             skopjeBtn.classList.add('active');
             stipBtn.classList.remove('active');
         });
     </script>
 </body>
+
 </html>

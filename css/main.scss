@@ -219,7 +219,7 @@ main{
             padding-bottom: 5rem;
             .card{
                 margin: 1rem 0;
-                background: #dddddd00;
+                background: #f3f3f39f;
                 box-shadow: 10px 11px 30px rgba(0, 0, 0, 0.25);
                 border-radius: 22px;
                 box-sizing: border-box;
@@ -227,7 +227,6 @@ main{
                 transition: all ease-in-out 0.3s;
                 position: relative;
                 width: calc(250px + 2rem);
-
                 backdrop-filter: blur(1.5px);
                 
                 a{
