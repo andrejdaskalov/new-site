@@ -12,11 +12,33 @@
     <title>AKVA-ING</title>
 </head>
 <body>
+    <div id="preloader">
+        <div class="animation" id="overlay" style="
+        display: block;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-color: #fff;
+            z-index: 99999;
+            transition: all 0.2s ease-in-out;
+        ">
+            <object data="res/akvaing_loading.svg" alt="loading animation" style="border:
+                0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 300px;
+                height: 300px;
+            "></object>
+        </div>
+    </div>
     <script>
         if (localStorage.getItem('lang')==='en') {
             window.location.href="en/index-en.html";
         }
     </script>
+    
     <div class="lang-pill">
         <button class="active" id="mk-btn">МК</button>
         <button id="en-btn">EN</button>
@@ -114,6 +136,14 @@
             hydroBtn.classList.add("active");
             archBtn.classList.remove("active");
         })
+
+        
+        window.onload = setTimeout(function(){
+                document.getElementById('overlay').style.opacity = '0';
+                setTimeout(function(){
+                    document.getElementById('preloader').style.display = 'none';
+                },300)
+            }, 2200)
     </script>
 </body>
 </html>
